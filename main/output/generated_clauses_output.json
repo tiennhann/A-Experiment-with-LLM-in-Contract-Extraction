@@ -1,0 +1,848 @@
+{
+  "contracts": [
+    {
+      "file_name": "contract1",
+      "contract_text": "A text representing a contract between two entities, for example, the text XYZ Homes builds eight to nine 2,000 square foot homes each month for new home buyers. Each new home requires 16,000 board feet of Number 2 Common grade lumber. In order to complete eight to nine homes, XYZ Homes must purchase 144,000 board feet of Number 2 Common grade lumber each month. Lumber Yard A is the preferred supplier of this lumber. XYZ Homes contracts with Lumber Yard A for the required lumber. The two sides agree on the following: \na) Lumber Yard A will produce a total of 144,000 board feet of lumber for XYZ Homes.\nb) Lumber Yard A guarantees to schedule the transport and delivery of 14-16 tractor trailers worth of lumber in one month to XYZ Homes.\nc) The lumber delivered to XYZ Homes will be at or above Number 2 Common grade.\nd) The agreed upon cost of lumber is at $122,000 for 144,000 board feet and the transport and delivery cost will be at or below $500,000 for 144,000 board feet.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: XYZ Homes  \n- Role: Buyer  \n- Party 2: Lumber Yard A  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- XYZ Homes: Purchase 144,000 board feet of Number 2 Common grade lumber each month  \n- Lumber Yard A: Produce 144,000 board feet of lumber and schedule transport and delivery of 14-16 tractor trailers worth of lumber  \n\n3/ Timeline and Deadlines:  \n- Lumber delivery: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $122,000 for 144,000 board feet  \n- Transport and delivery cost: $500,000 for 144,000 board feet  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Lumber must be at or above Number 2 Common grade  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: XYZ Homes is responsible for purchasing 144,000 board feet of Number 2 Common grade lumber when every month.",
+        "C2: Lumber Yard A is responsible for producing a total of 144,000 board feet of Number 2 Common grade lumber when every month.",
+        "C3: Lumber Yard A is responsible for scheduling the transport and delivery of 14-16 tractor trailers worth of lumber to XYZ Homes when every month.",
+        "C4: Lumber Yard A is responsible for delivering lumber that is at or above Number 2 Common grade to XYZ Homes when every month.",
+        "C5: XYZ Homes is responsible for making payment ($122,000) for the delivered lumber when every month.",
+        "C6: XYZ Homes is responsible for making payment for transport and delivery costs at or below $500,000 when every month."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: XYZ Homes is responsible for purchasing 144,000 board feet of Number 2 Common grade lumber when every month.",
+          "reasoning": "The contract clearly states that XYZ Homes must purchase 144,000 board feet of lumber each month, which aligns perfectly with the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Lumber Yard A is responsible for producing a total of 144,000 board feet of Number 2 Common grade lumber when every month.",
+          "reasoning": "The contract text explicitly states that Lumber Yard A will produce a total of 144,000 board feet of lumber for XYZ Homes each month, which directly supports the clause's assertion of monthly responsibility. Thus, the clause is consistent with the contract text.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Lumber Yard A is responsible for scheduling the transport and delivery of 14-16 tractor trailers worth of lumber to XYZ Homes when every month.",
+          "reasoning": "The clause is directly supported by the contract text, which specifies that Lumber Yard A is responsible for scheduling the transport and delivery of the specified amount of lumber each month.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Lumber Yard A is responsible for delivering lumber that is at or above Number 2 Common grade to XYZ Homes when every month.",
+          "reasoning": "The contract text explicitly states that \"The lumber delivered to XYZ Homes will be at or above Number 2 Common grade,\" confirming Lumber Yard A's responsibility. Furthermore, the monthly delivery requirement is consistent with the contract's terms, which specify that deliveries will occur each month. Thus, the clause is fully supported by the contract text.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: XYZ Homes is responsible for making payment ($122,000) for the delivered lumber when every month.",
+          "reasoning": "The clause is directly supported by the contract text, which states that XYZ Homes is responsible for paying $122,000 for the lumber each month, fulfilling all criteria for entailment.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: XYZ Homes is responsible for making payment for transport and delivery costs at or below $500,000 when every month.",
+          "reasoning": "The clause is supported by the contract text, which clearly states that XYZ Homes is responsible for the transport and delivery costs, confirming the obligation to pay at or below $500,000 each month.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: XYZ Homes is responsible for purchasing 144,000 board feet of Number 2 Common grade lumber when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Lumber Yard A is responsible for producing a total of 144,000 board feet of Number 2 Common grade lumber when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Lumber Yard A is responsible for scheduling the transport and delivery of 14-16 tractor trailers worth of lumber to XYZ Homes when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Lumber Yard A is responsible for delivering lumber that is at or above Number 2 Common grade to XYZ Homes when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: XYZ Homes is responsible for making payment ($122,000) for the delivered lumber when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: XYZ Homes is responsible for making payment for transport and delivery costs at or below $500,000 when every month.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract2",
+      "contract_text": "ABC Electronics produces 10-12,000 electronic devices each month. Each device requires 50 high-quality capacitors. To complete their production, ABC Electronics must purchase 500,000 capacitors each month. Component Supplier B is the preferred supplier of these capacitors.\na) Component Supplier B will produce a total of 500,000 capacitors for ABC Electronics. This constraint addresses the functionality concern of ABC Electronics.\nb) Component Supplier B guarantees to schedule the transport and delivery of 10-12 shipments of capacitors in one month to ABC Electronics. This constraint addresses the time to market concern.\nc) The capacitors delivered to ABC Electronics will be at or above the specified high-quality grade. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of capacitors is $150,000 for 500,000 units and the transport and delivery cost will be at or below $50,000 for 500,000 units. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: ABC Electronics  \n- Role: Buyer  \n- Party 2: Component Supplier B  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- ABC Electronics: Purchase 500,000 capacitors each month  \n- Component Supplier B: Produce 500,000 capacitors for ABC Electronics; Schedule transport and delivery of 10-12 shipments of capacitors each month; Ensure capacitors meet high-quality standards  \n\n3/ Timeline and Deadlines:  \n- Purchase of capacitors: Ongoing monthly obligation (4 weeks)  \n- Production of capacitors: Ongoing monthly obligation (4 weeks)  \n- Transport and delivery: 10-12 shipments scheduled within each month (4 weeks)  \n\n4/ Financial Terms:  \n- Payment cost: $150,000 for 500,000 units  \n- Transport and delivery cost: $50,000 for 500,000 units  \n- Other costs: None specified  \n\n5/ Special Conditions:  \n- Prerequisites: Capacitors must meet high-quality standards  \n- Contingencies: Timely production and delivery of capacitors to meet ABC Electronics' production schedule  \n\n6/ Termination Clauses:  \n- Conditions for termination: Not explicitly stated  \n- Notice period requirements: Not specified",
+      "all_clauses": [
+        "C1: ABC Electronics is responsible for purchasing 500,000 high-quality capacitors each month when on an ongoing monthly basis.",
+        "C2: Component Supplier B is responsible for producing 500,000 high-quality capacitors for ABC Electronics when on an ongoing monthly basis.",
+        "C3: Component Supplier B is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to ABC Electronics when within each month.",
+        "C4: Component Supplier B is responsible for ensuring that the capacitors delivered to ABC Electronics meet or exceed the specified high-quality standards when at the time of delivery.",
+        "C5: ABC Electronics is responsible for making payment of $150,000 for 500,000 capacitors when on a monthly basis.",
+        "C6: ABC Electronics is responsible for making payment of $50,000 for transport and delivery of 500,000 capacitors when on a monthly basis."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: ABC Electronics is responsible for purchasing 500,000 high-quality capacitors each month when on an ongoing monthly basis.",
+          "reasoning": "The contract text clearly states that ABC Electronics must purchase 500,000 capacitors each month, which directly supports the clause's claim of ongoing responsibility for this purchase.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Component Supplier B is responsible for producing 500,000 high-quality capacitors for ABC Electronics when on an ongoing monthly basis.",
+          "reasoning": "The contract explicitly states that Component Supplier B will produce 500,000 high-quality capacitors for ABC Electronics each month, which directly supports the clause's claim of ongoing responsibility.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Component Supplier B is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to ABC Electronics when within each month.",
+          "reasoning": "The contract text clearly states that Component Supplier B is responsible for scheduling 10-12 shipments of capacitors each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Component Supplier B is responsible for ensuring that the capacitors delivered to ABC Electronics meet or exceed the specified high-quality standards when at the time of delivery.",
+          "reasoning": "The clause is directly supported by the contract text stating that the capacitors must meet or exceed high-quality standards, confirming Supplier B's responsibility.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: ABC Electronics is responsible for making payment of $150,000 for 500,000 capacitors when on a monthly basis.",
+          "reasoning": "The clause accurately reflects the payment obligation stated in the contract text, confirming that ABC Electronics is responsible for the payment of $150,000 for 500,000 capacitors on a monthly basis.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: ABC Electronics is responsible for making payment of $50,000 for transport and delivery of 500,000 capacitors when on a monthly basis.",
+          "reasoning": "The clause is supported by the contract text, which specifies that the transport and delivery cost is $50,000 for 500,000 capacitors, and it confirms that ABC Electronics is responsible for this payment on a monthly basis.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: ABC Electronics is responsible for purchasing 500,000 high-quality capacitors each month when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Component Supplier B is responsible for producing 500,000 high-quality capacitors for ABC Electronics when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Component Supplier B is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to ABC Electronics when within each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Component Supplier B is responsible for ensuring that the capacitors delivered to ABC Electronics meet or exceed the specified high-quality standards when at the time of delivery.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: ABC Electronics is responsible for making payment of $150,000 for 500,000 capacitors when on a monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: ABC Electronics is responsible for making payment of $50,000 for transport and delivery of 500,000 capacitors when on a monthly basis.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract3",
+      "contract_text": "DEF Pharmaceuticals manufactures 20-25 batches of medicine each month. Each batch requires 200 liters of a specific chemical compound. To complete their production, DEF Pharmaceuticals must purchase 5,000 liters of the chemical compound each month. Chemical Supplier C is the preferred supplier of this compound.\na) Chemical Supplier C will produce a total of 5,000 liters of the chemi-cal compound for DEF Pharmaceuticals. This constraint addresses the functionality concern of DEF Pharmaceuticals.\nb) Chemical Supplier C guarantees to schedule the transport and deliv-ery of 5-6 shipments of the chemical compound in one month to DEF Pharmaceuticals. This constraint addresses the time to market concern.\nc) The chemical compound delivered to DEF Pharmaceuticals will meet the specified purity standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of the chemical compound is $100,000 for 5,000 liters and the transport and delivery cost will be at or below $20,000 for 5,000 liters. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: DEF Pharmaceuticals  \n- Role: Manufacturer  \n- Party 2: Chemical Supplier C  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- DEF Pharmaceuticals:  \n  - Manufacture 20-25 batches of medicine each month  \n  - Purchase 5,000 liters of the chemical compound each month  \n- Chemical Supplier C:  \n  - Produce 5,000 liters of the chemical compound for DEF Pharmaceuticals  \n  - Schedule transport and delivery of 5-6 shipments of the chemical compound each month  \n  - Ensure the chemical compound meets specified purity standards  \n\n3/ Timeline and Deadlines:  \n- Produce 5,000 liters of the chemical compound: 4 weeks  \n- Schedule transport and delivery of 5-6 shipments: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $100,000 for 5,000 liters  \n- Transport and delivery cost: $20,000 for 5,000 liters  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites:  \n  - The chemical compound must meet specified purity standards  \n- Contingencies:  \n  - Timely production and delivery of the chemical compound  \n\n6/ Termination Clauses:  \n- Conditions for termination: None explicitly stated  \n- Notice period requirements: None specified",
+      "all_clauses": [
+        "C1: DEF Pharmaceuticals is responsible for manufacturing 20-25 batches of medicine when each month.",
+        "C2: DEF Pharmaceuticals is responsible for purchasing 5,000 liters of the chemical compound when each month.",
+        "C3: Chemical Supplier C is responsible for producing a total of 5,000 liters of the chemical compound for DEF Pharmaceuticals when each month.",
+        "C4: Chemical Supplier C is responsible for scheduling the transport and delivery of 5-6 shipments of the chemical compound to DEF Pharmaceuticals when each month.",
+        "C5: Chemical Supplier C is responsible for ensuring that the chemical compound delivered to DEF Pharmaceuticals meets the specified purity standards when each month.",
+        "C6: DEF Pharmaceuticals is responsible for making payment ($100,000) for the 5,000 liters of the chemical compound when by week 4.",
+        "C7: DEF Pharmaceuticals is responsible for making payment ($20,000) for the transport and delivery of the 5,000 liters of the chemical compound when by week 4."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: DEF Pharmaceuticals is responsible for manufacturing 20-25 batches of medicine when each month.",
+          "reasoning": "The contract text clearly states that DEF Pharmaceuticals manufactures 20-25 batches of medicine each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: DEF Pharmaceuticals is responsible for purchasing 5,000 liters of the chemical compound when each month.",
+          "reasoning": "The contract text clearly states that DEF Pharmaceuticals is required to purchase 5,000 liters of the chemical compound each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Chemical Supplier C is responsible for producing a total of 5,000 liters of the chemical compound for DEF Pharmaceuticals when each month.",
+          "reasoning": "The clause is directly supported by the contract text, which confirms Chemical Supplier C's responsibility to produce 5,000 liters monthly for DEF Pharmaceuticals.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Chemical Supplier C is responsible for scheduling the transport and delivery of 5-6 shipments of the chemical compound to DEF Pharmaceuticals when each month.",
+          "reasoning": "The clause is directly supported by the contract text, which confirms that Chemical Supplier C is responsible for scheduling 5-6 shipments each month to DEF Pharmaceuticals.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: Chemical Supplier C is responsible for ensuring that the chemical compound delivered to DEF Pharmaceuticals meets the specified purity standards when each month.",
+          "reasoning": "The contract text explicitly states that \"The chemical compound delivered to DEF Pharmaceuticals will meet the specified purity standards,\" which supports the clause that Chemical Supplier C is responsible for ensuring these standards are met. Furthermore, the timeline of \"each month\" is consistent with the delivery schedule outlined in the contract.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: DEF Pharmaceuticals is responsible for making payment ($100,000) for the 5,000 liters of the chemical compound when by week 4.",
+          "reasoning": "The clause is supported by the contract text, which specifies that DEF Pharmaceuticals must pay $100,000 for 5,000 liters of the chemical compound, and the timeline aligns with the monthly production schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C7: DEF Pharmaceuticals is responsible for making payment ($20,000) for the transport and delivery of the 5,000 liters of the chemical compound when by week 4.",
+          "reasoning": "The clause is supported by the contract text, which specifies that DEF Pharmaceuticals is responsible for the transport and delivery cost of $20,000 for the 5,000 liters, and the timeline aligns with the delivery schedule.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: DEF Pharmaceuticals is responsible for manufacturing 20-25 batches of medicine when each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: DEF Pharmaceuticals is responsible for purchasing 5,000 liters of the chemical compound when each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Chemical Supplier C is responsible for producing a total of 5,000 liters of the chemical compound for DEF Pharmaceuticals when each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Chemical Supplier C is responsible for scheduling the transport and delivery of 5-6 shipments of the chemical compound to DEF Pharmaceuticals when each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: Chemical Supplier C is responsible for ensuring that the chemical compound delivered to DEF Pharmaceuticals meets the specified purity standards when each month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: DEF Pharmaceuticals is responsible for making payment ($100,000) for the 5,000 liters of the chemical compound when by week 4.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C7: DEF Pharmaceuticals is responsible for making payment ($20,000) for the transport and delivery of the 5,000 liters of the chemical compound when by week 4.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract4",
+      "contract_text": "GHI Automotive produces 50-60 cars each month. Each car requires 1,000 pounds of high-grade steel. To complete their production, GHI Automotive must purchase 60,000 pounds of high-grade steel each month. Steel Supplier D is the preferred supplier of this steel.\na) Steel Supplier D will produce a total of 60,000 pounds of high-grade steel for GHI Automotive. This constraint addresses the functionality concern of GHI Automotive.\nb) Steel Supplier D guarantees to schedule the transport and delivery of 6-7 shipments of steel in one month to GHI Automotive. This constraint addresses the time to market concern.\nc) The steel delivered to GHI Automotive will meet the specified high-grade standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of steel is $300,000 for 60,000 pounds and the transport and delivery cost will be at or below $40,000 for 60,000 pounds. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: GHI Automotive  \n- Role: Buyer  \n- Party 2: Steel Supplier D  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- GHI Automotive: Purchase 60,000 pounds of high-grade steel each month  \n- Steel Supplier D: Produce 60,000 pounds of high-grade steel; Schedule 6-7 shipments of steel each month; Ensure steel meets specified high-grade standards  \n\n3/ Timeline and Deadlines:  \n- GHI Automotive: Monthly obligation to purchase steel (4 weeks)  \n- Steel Supplier D: Monthly obligation to produce and deliver steel (4 weeks)  \n\n4/ Financial Terms:  \n- Payment cost: $300,000 for 60,000 pounds of steel  \n- Transport and delivery cost: $40,000 for 60,000 pounds  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Steel must meet specified high-grade standards  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: GHI Automotive is responsible for purchasing 60,000 pounds of high-grade steel when every 4 weeks.",
+        "C2: Steel Supplier D is responsible for producing 60,000 pounds of high-grade steel for GHI Automotive when every 4 weeks.",
+        "C3: Steel Supplier D is responsible for scheduling the transport and delivery of 6-7 shipments of high-grade steel to GHI Automotive when every 4 weeks.",
+        "C4: Steel Supplier D is responsible for ensuring that the steel delivered to GHI Automotive meets the specified high-grade standards when every 4 weeks.",
+        "C5: GHI Automotive is responsible for making payment ($300,000) for the purchased high-grade steel when every 4 weeks.",
+        "C6: GHI Automotive is responsible for making payment ($40,000) for the transport and delivery of 60,000 pounds of high-grade steel when every 4 weeks."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: GHI Automotive is responsible for purchasing 60,000 pounds of high-grade steel when every 4 weeks.",
+          "reasoning": "The clause aligns with the contract's stipulation that GHI Automotive must purchase 60,000 pounds of steel each month, which corresponds to the 4-week timeframe mentioned in the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Steel Supplier D is responsible for producing 60,000 pounds of high-grade steel for GHI Automotive when every 4 weeks.",
+          "reasoning": "The clause is directly supported by the contract text, which specifies that Steel Supplier D will produce 60,000 pounds of high-grade steel for GHI Automotive each month, and 4 weeks is equivalent to 1 month.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Steel Supplier D is responsible for scheduling the transport and delivery of 6-7 shipments of high-grade steel to GHI Automotive when every 4 weeks.",
+          "reasoning": "The contract explicitly states that Steel Supplier D will schedule 6-7 shipments in one month, which corresponds to the clause's requirement for scheduling every 4 weeks.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Steel Supplier D is responsible for ensuring that the steel delivered to GHI Automotive meets the specified high-grade standards when every 4 weeks.",
+          "reasoning": "The contract text explicitly states that \"The steel delivered to GHI Automotive will meet the specified high-grade standards,\" which directly supports the clause. Furthermore, the timeline of \"every 4 weeks\" is consistent with the monthly production schedule, as 1 month equals 4 weeks, confirming that there are no contradictions regarding the conditions or obligations stated.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: GHI Automotive is responsible for making payment ($300,000) for the purchased high-grade steel when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which specifies that GHI Automotive must pay $300,000 for the steel, and the timing of payment aligns with the 4-week period mentioned.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: GHI Automotive is responsible for making payment ($40,000) for the transport and delivery of 60,000 pounds of high-grade steel when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which specifies that GHI Automotive is responsible for the $40,000 payment for transport and delivery, aligning with the stated costs and timeline.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: GHI Automotive is responsible for purchasing 60,000 pounds of high-grade steel when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Steel Supplier D is responsible for producing 60,000 pounds of high-grade steel for GHI Automotive when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Steel Supplier D is responsible for scheduling the transport and delivery of 6-7 shipments of high-grade steel to GHI Automotive when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Steel Supplier D is responsible for ensuring that the steel delivered to GHI Automotive meets the specified high-grade standards when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: GHI Automotive is responsible for making payment ($300,000) for the purchased high-grade steel when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: GHI Automotive is responsible for making payment ($40,000) for the transport and delivery of 60,000 pounds of high-grade steel when every 4 weeks.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract5",
+      "contract_text": "JKL Furniture manufactures 200-250 pieces of furniture each month. Each piece requires 50 board feet of premium hardwood. To complete their produc-tion, JKL Furniture must purchase 12,500 board feet of premium hardwood each month. Wood Supplier E is the preferred supplier of this hardwood.\na) Wood Supplier E will produce a total of 12,500 board feet of premium hardwood for JKL Furniture. This constraint addresses the functionality concern of JKL Furniture.\nb) Wood Supplier E guarantees to schedule the transport and delivery of 2-3 shipments of hardwood in one month to JKL Furniture. This constraint addresses the time to market concern.\nc) The hardwood delivered to JKL Furniture will meet the specified premium grade standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of hardwood is $50,000 for 12,500 board feet and the transport and delivery cost will be at or below $10,000 for 12,500 board feet. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: JKL Furniture  \n- Role: Manufacturer  \n- Party 2: Wood Supplier E  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- JKL Furniture:  \n  - Manufacture 200-250 pieces of furniture each month  \n  - Purchase 12,500 board feet of premium hardwood each month  \n- Wood Supplier E:  \n  - Produce 12,500 board feet of premium hardwood for JKL Furniture  \n  - Schedule 2-3 shipments of hardwood in one month to JKL Furniture  \n  - Ensure hardwood meets specified premium grade standards  \n\n3/ Timeline and Deadlines:  \n- Purchase hardwood: 4 weeks  \n- Schedule shipments: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $50,000 for 12,500 board feet  \n- Transport and delivery cost: $10,000 for 12,500 board feet  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Hardwood must meet specified premium grade standards  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: JKL Furniture is responsible for manufacturing 200-250 pieces of furniture when every month.",
+        "C2: JKL Furniture is responsible for purchasing 12,500 board feet of premium hardwood when every month.",
+        "C3: Wood Supplier E is responsible for producing 12,500 board feet of premium hardwood for JKL Furniture when every month.",
+        "C4: Wood Supplier E is responsible for scheduling 2-3 shipments of hardwood to JKL Furniture when every month.",
+        "C5: Wood Supplier E is responsible for ensuring that the hardwood delivered to JKL Furniture meets the specified premium grade standards when every month.",
+        "C6: JKL Furniture is responsible for making payment ($50,000) for the premium hardwood when every month.",
+        "C7: JKL Furniture is responsible for making payment ($10,000) for the transport and delivery of the premium hardwood when every month."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: JKL Furniture is responsible for manufacturing 200-250 pieces of furniture when every month.",
+          "reasoning": "The contract text clearly states that JKL Furniture manufactures 200-250 pieces of furniture each month, which directly confirms the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: JKL Furniture is responsible for purchasing 12,500 board feet of premium hardwood when every month.",
+          "reasoning": "The contract text clearly states that JKL Furniture must purchase 12,500 board feet of premium hardwood each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Wood Supplier E is responsible for producing 12,500 board feet of premium hardwood for JKL Furniture when every month.",
+          "reasoning": "Reasoning: The contract text clearly states that \"Wood Supplier E will produce a total of 12,500 board feet of premium hardwood for JKL Furniture\" each month, which directly supports the clause that Wood Supplier E is responsible for this production every month. \n\nIs Entailed: ENTAILMENT",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Wood Supplier E is responsible for scheduling 2-3 shipments of hardwood to JKL Furniture when every month.",
+          "reasoning": "The clause is directly supported by the contract text, which specifies that Wood Supplier E guarantees to schedule 2-3 shipments of hardwood each month to JKL Furniture.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: Wood Supplier E is responsible for ensuring that the hardwood delivered to JKL Furniture meets the specified premium grade standards when every month.",
+          "reasoning": "The clause is directly supported by the contract text, which confirms that Wood Supplier E is responsible for delivering hardwood that meets the specified premium grade standards each month.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: JKL Furniture is responsible for making payment ($50,000) for the premium hardwood when every month.",
+          "reasoning": "The contract clearly states that JKL Furniture must pay $50,000 for the premium hardwood each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C7: JKL Furniture is responsible for making payment ($10,000) for the transport and delivery of the premium hardwood when every month.",
+          "reasoning": "The clause is supported by the contract text, which specifies that JKL Furniture is responsible for the transport and delivery costs of $10,000 each month, aligning with the obligations outlined in the contract.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: JKL Furniture is responsible for manufacturing 200-250 pieces of furniture when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: JKL Furniture is responsible for purchasing 12,500 board feet of premium hardwood when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Wood Supplier E is responsible for producing 12,500 board feet of premium hardwood for JKL Furniture when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Wood Supplier E is responsible for scheduling 2-3 shipments of hardwood to JKL Furniture when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: Wood Supplier E is responsible for ensuring that the hardwood delivered to JKL Furniture meets the specified premium grade standards when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: JKL Furniture is responsible for making payment ($50,000) for the premium hardwood when every month.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C7: JKL Furniture is responsible for making payment ($10,000) for the transport and delivery of the premium hardwood when every month.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract6",
+      "contract_text": "MNO Textiles produces 5-6,000 garments each month. Each garment requires 10 yards of premium fabric. To complete their production, MNO Textiles must purchase 60,000 yards of premium fabric each month. Fabric Supplier F is the preferred supplier of this fabric.\na) Fabric Supplier F will produce a total of 60,000 yards of premium fabric for MNO Textiles. This constraint addresses the functionality concern ofMNO Textiles.\nb) Fabric Supplier F guarantees to schedule the transport and delivery of6-7 shipments of fabric in one month to MNO Textiles. This constraint addresses the time to market concern.\nc) The fabric delivered to MNO Textiles will meet the specified premium quality standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of fabric is $240,000 for 60,000 yards and the trans- port and delivery cost will be at or below $30,000 for 60,000 yards. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: MNO Textiles  \n- Role: Buyer  \n- Party 2: Fabric Supplier F  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- MNO Textiles: Purchase 60,000 yards of premium fabric each month  \n- Fabric Supplier F: Produce 60,000 yards of premium fabric for MNO Textiles, schedule 6-7 shipments of fabric in one month, ensure fabric meets premium quality standards  \n\n3/ Timeline and Deadlines:  \n- MNO Textiles: Monthly obligation (4 weeks)  \n- Fabric Supplier F: Monthly obligation (4 weeks) for production and delivery  \n\n4/ Financial Terms:  \n- Payment cost: $240,000 for 60,000 yards  \n- Transport and delivery cost: $30,000 for 60,000 yards  \n- Other costs: None specified  \n\n5/ Special Conditions:  \n- Prerequisites: Fabric must meet specified premium quality standards  \n- Contingencies: Timely scheduling of 6-7 shipments per month  \n\n6/ Termination Clauses:  \n- Conditions for termination: Not explicitly stated  \n- Notice period requirements: Not specified",
+      "all_clauses": [
+        "C1: MNO Textiles is responsible for purchasing 60,000 yards of premium fabric when every 4 weeks.",
+        "C2: Fabric Supplier F is responsible for producing a total of 60,000 yards of premium fabric for MNO Textiles when every 4 weeks.",
+        "C3: Fabric Supplier F is responsible for scheduling the transport and delivery of 6-7 shipments of fabric to MNO Textiles when every 4 weeks.",
+        "C4: Fabric Supplier F is responsible for ensuring that the fabric delivered to MNO Textiles meets the specified premium quality standards when every 4 weeks.",
+        "C5: MNO Textiles is responsible for making payment of $240,000 for 60,000 yards of premium fabric when every 4 weeks.",
+        "C6: MNO Textiles is responsible for making payment of $30,000 for transport and delivery of 60,000 yards of premium fabric when every 4 weeks."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: MNO Textiles is responsible for purchasing 60,000 yards of premium fabric when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which explicitly states that MNO Textiles must purchase 60,000 yards of fabric each month, consistent with the 4-week timeframe mentioned in the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Fabric Supplier F is responsible for producing a total of 60,000 yards of premium fabric for MNO Textiles when every 4 weeks.",
+          "reasoning": "The contract text explicitly states that Fabric Supplier F will produce 60,000 yards of fabric for MNO Textiles, and the timeline of \"every 4 weeks\" corresponds to the monthly production requirement, confirming the clause is logically entailed.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Fabric Supplier F is responsible for scheduling the transport and delivery of 6-7 shipments of fabric to MNO Textiles when every 4 weeks.",
+          "reasoning": "The clause is directly supported by the contract text, which specifies that Fabric Supplier F will schedule 6-7 shipments in one month, consistent with the 4-week timeframe mentioned in the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Fabric Supplier F is responsible for ensuring that the fabric delivered to MNO Textiles meets the specified premium quality standards when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text which explicitly states that the fabric must meet premium quality standards, and the timeline is consistent with the monthly production cycle.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: MNO Textiles is responsible for making payment of $240,000 for 60,000 yards of premium fabric when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which specifies that MNO Textiles must pay $240,000 for 60,000 yards of fabric, and the timing aligns with the monthly production schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: MNO Textiles is responsible for making payment of $30,000 for transport and delivery of 60,000 yards of premium fabric when every 4 weeks.",
+          "reasoning": "The clause aligns with the contract's stipulation of a $30,000 transport cost and the payment timeline of every 4 weeks corresponds to the monthly production schedule.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: MNO Textiles is responsible for purchasing 60,000 yards of premium fabric when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Fabric Supplier F is responsible for producing a total of 60,000 yards of premium fabric for MNO Textiles when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Fabric Supplier F is responsible for scheduling the transport and delivery of 6-7 shipments of fabric to MNO Textiles when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Fabric Supplier F is responsible for ensuring that the fabric delivered to MNO Textiles meets the specified premium quality standards when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: MNO Textiles is responsible for making payment of $240,000 for 60,000 yards of premium fabric when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: MNO Textiles is responsible for making payment of $30,000 for transport and delivery of 60,000 yards of premium fabric when every 4 weeks.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract7",
+      "contract_text": "PQR Foods produces 30-35,000 packaged meals each month. Each meal re-quires 0.5 pounds of a specific ingredient blend. To complete their production, PQR Foods must purchase 17,500 pounds of the ingredient blend each month. Ingredient Supplier G is the preferred supplier of this blend.\na) Ingredient Supplier G will produce a total of 17,500 pounds of the ingre-dient blend for PQR Foods. This constraint addresses the functionality concern of PQR Foods.\nb) Ingredient Supplier G guarantees to schedule the transport and delivery of 3-4 shipments of the ingredient blend in one month to PQR Foods. This constraint addresses the time to market concern.\nc) The ingredient blend delivered to PQR Foods will meet the specified quality standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of the ingredient blend is $70,000 for 17,500 pounds and the transport and delivery cost will be at or below $10,000 for 17,500 pounds. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: PQR Foods  \n- Role: Buyer  \n- Party 2: Ingredient Supplier G  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- PQR Foods: Purchase 17,500 pounds of the ingredient blend each month  \n- Ingredient Supplier G: Produce 17,500 pounds of the ingredient blend and schedule 3-4 shipments per month  \n\n3/ Timeline and Deadlines:  \n- Ingredient Supplier G: 3-4 shipments: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $70,000 for 17,500 pounds  \n- Transport and delivery cost: $10,000 for 17,500 pounds  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: The ingredient blend must meet specified quality standards  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: PQR Foods is responsible for purchasing 17,500 pounds of the ingredient blend when every 4 weeks.",
+        "C2: Ingredient Supplier G is responsible for producing a total of 17,500 pounds of the ingredient blend for PQR Foods when every 4 weeks.",
+        "C3: Ingredient Supplier G is responsible for scheduling the transport and delivery of 3-4 shipments of the ingredient blend to PQR Foods when every 4 weeks.",
+        "C4: Ingredient Supplier G is responsible for delivering the ingredient blend that meets the specified quality standards when every 4 weeks.",
+        "C5: PQR Foods is responsible for making payment ($70,000) for the ingredient blend when every 4 weeks.",
+        "C6: PQR Foods is responsible for making payment ($10,000) for the transport and delivery of the ingredient blend when every 4 weeks."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C2: Ingredient Supplier G is responsible for producing a total of 17,500 pounds of the ingredient blend for PQR Foods when every 4 weeks.",
+          "reasoning": "The clause is directly supported by the contract text, which states that Ingredient Supplier G will produce 17,500 pounds of the ingredient blend for PQR Foods each month, and 4 weeks is equivalent to that month.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Ingredient Supplier G is responsible for scheduling the transport and delivery of 3-4 shipments of the ingredient blend to PQR Foods when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which explicitly states that Ingredient Supplier G will schedule 3-4 shipments in one month, aligning with the 4-week period mentioned in the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Ingredient Supplier G is responsible for delivering the ingredient blend that meets the specified quality standards when every 4 weeks.",
+          "reasoning": "The contract confirms that the ingredient blend will meet quality standards and implies a delivery schedule consistent with every 4 weeks.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: PQR Foods is responsible for making payment ($70,000) for the ingredient blend when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which specifies that PQR Foods must pay $70,000 for the ingredient blend, and the payment timing aligns with the monthly schedule.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [
+        {
+          "clause": "C1: PQR Foods is responsible for purchasing 17,500 pounds of the ingredient blend when every 4 weeks.",
+          "reasoning": "The contract states PQR Foods must purchase 17,500 pounds each month, but the clause specifies a 4-week interval, which could lead to a misunderstanding of the purchasing frequency.",
+          "verdict": "NOT_ENTAILMENT"
+        },
+        {
+          "clause": "C6: PQR Foods is responsible for making payment ($10,000) for the transport and delivery of the ingredient blend when every 4 weeks.",
+          "reasoning": "The clause specifies payment every 4 weeks, but the contract does not explicitly state this timing, only that there will be 3-4 shipments in a month.",
+          "verdict": "NOT_ENTAILMENT"
+        }
+      ],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C2: Ingredient Supplier G is responsible for producing a total of 17,500 pounds of the ingredient blend for PQR Foods when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Ingredient Supplier G is responsible for scheduling the transport and delivery of 3-4 shipments of the ingredient blend to PQR Foods when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Ingredient Supplier G is responsible for delivering the ingredient blend that meets the specified quality standards when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: PQR Foods is responsible for making payment ($70,000) for the ingredient blend when every 4 weeks.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": [
+        {
+          "clause": "C1: PQR Foods is responsible for purchasing 17,500 pounds of the ingredient blend when every 4 weeks.",
+          "answer": "no",
+          "verdict": "NOT_ENTAILMENT",
+          "reasoning": "The contract states PQR Foods must purchase 17,500 pounds each month, but the clause specifies a 4-week interval, which could lead to a misunderstanding of the purchasing frequency."
+        },
+        {
+          "clause": "C6: PQR Foods is responsible for making payment ($10,000) for the transport and delivery of the ingredient blend when every 4 weeks.",
+          "answer": "no",
+          "verdict": "NOT_ENTAILMENT",
+          "reasoning": "The clause specifies payment every 4 weeks, but the contract does not explicitly state this timing, only that there will be 3-4 shipments in a month."
+        }
+      ]
+    },
+    {
+      "file_name": "contract8",
+      "contract_text": "STU Electronics produces 10-12,000 electronic devices each month. Each device requires 50 high-quality capacitors. To complete their production, STU Electronics must purchase 500,000 capacitors each month. Component Supplier H is the preferred supplier of these capacitors.\na) Component Supplier H will produce a total of 500,000 capacitors for STU Electronics. This constraint addresses the functionality concern of STU Electronics.\nb) Component Supplier H guarantees to schedule the transport and delivery of 10-12 shipments of capacitors in one month to STU Electronics. This constraint addresses the time to market concern.\nc) The capacitors delivered to STU Electronics will be at or above the specified high-quality grade. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of capacitors is $150,000 for 500,000 units and the transport and delivery cost will be at or below $50,000 for 500,000 units. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: STU Electronics  \n- Role: Buyer  \n- Party 2: Component Supplier H  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- STU Electronics: Purchase 500,000 capacitors each month  \n- Component Supplier H: Produce 500,000 capacitors for STU Electronics; Schedule transport and delivery of 10-12 shipments of capacitors each month; Ensure capacitors meet high-quality standards  \n\n3/ Timeline and Deadlines:  \n- Purchase of capacitors: 4 weeks  \n- Transport and delivery of shipments: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $150,000 for 500,000 units  \n- Transport and delivery cost: $50,000 for 500,000 units  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Capacitors must be at or above specified high-quality grade  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: STU Electronics is responsible for purchasing 500,000 high-quality capacitors when every 4 weeks.",
+        "C2: Component Supplier H is responsible for producing a total of 500,000 high-quality capacitors for STU Electronics when every 4 weeks.",
+        "C3: Component Supplier H is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to STU Electronics when every 4 weeks.",
+        "C4: Component Supplier H is responsible for ensuring that the capacitors delivered to STU Electronics are at or above the specified high-quality grade when every 4 weeks.",
+        "C5: STU Electronics is responsible for making payment ($150,000) for the 500,000 capacitors when every 4 weeks.",
+        "C6: STU Electronics is responsible for making payment ($50,000) for the transport and delivery of 500,000 capacitors when every 4 weeks."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: STU Electronics is responsible for purchasing 500,000 high-quality capacitors when every 4 weeks.",
+          "reasoning": "The contract explicitly states that STU Electronics must purchase 500,000 high-quality capacitors each month, which is consistent with the clause's requirement of purchasing them every 4 weeks.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Component Supplier H is responsible for producing a total of 500,000 high-quality capacitors for STU Electronics when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which states that Component Supplier H will produce 500,000 high-quality capacitors for STU Electronics each month, consistent with the timeline of every 4 weeks.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Component Supplier H is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to STU Electronics when every 4 weeks.",
+          "reasoning": "The clause aligns with the contract's statement that Component Supplier H will schedule 10-12 shipments in one month, and 4 weeks is equivalent to one month, confirming the consistency of the timeline.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Component Supplier H is responsible for ensuring that the capacitors delivered to STU Electronics are at or above the specified high-quality grade when every 4 weeks.",
+          "reasoning": "The contract text explicitly states that the capacitors delivered to STU Electronics will meet the specified high-quality grade, which supports the clause. Furthermore, the timeline of \"every 4 weeks\" is consistent with the monthly production schedule, confirming that the clause aligns with the contract's terms.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: STU Electronics is responsible for making payment ($150,000) for the 500,000 capacitors when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which specifies that STU Electronics must pay $150,000 for 500,000 capacitors, and the payment timeline aligns with the monthly schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: STU Electronics is responsible for making payment ($50,000) for the transport and delivery of 500,000 capacitors when every 4 weeks.",
+          "reasoning": "The clause aligns with the contract's stipulation that STU Electronics is responsible for the transport and delivery cost of $50,000, which is consistent with the contract's terms regarding payment and timeline.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: STU Electronics is responsible for purchasing 500,000 high-quality capacitors when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Component Supplier H is responsible for producing a total of 500,000 high-quality capacitors for STU Electronics when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Component Supplier H is responsible for scheduling the transport and delivery of 10-12 shipments of capacitors to STU Electronics when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Component Supplier H is responsible for ensuring that the capacitors delivered to STU Electronics are at or above the specified high-quality grade when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: STU Electronics is responsible for making payment ($150,000) for the 500,000 capacitors when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: STU Electronics is responsible for making payment ($50,000) for the transport and delivery of 500,000 capacitors when every 4 weeks.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract9",
+      "contract_text": "VWX Cosmetics produces 20-25,000 cosmetic products each month. Each product requires one custom-designed packaging box. To complete their pro-duction, VWX Cosmetics must purchase 25,000 custom-designed packaging boxes each month. Packaging Supplier I is the preferred supplier of these boxes.\na) Packaging Supplier I will produce a total of 25,000 custom-designed packaging boxes for VWX Cosmetics. This constraint addresses the functionality concern of VWX Cosmetics.\nb) Packaging Supplier I guarantees to schedule the transport and delivery of 2-3 shipments of packaging boxes in one month to VWX Cosmetics. This constraint addresses the time to market concern.\nc) The packaging boxes delivered to VWX Cosmetics will meet the specified custom design standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of packaging boxes is $50,000 for 25,000 boxes and the transport and delivery cost will be at or below $5,000 for 25,000 boxes. This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: VWX Cosmetics  \n- Role: Buyer  \n- Party 2: Packaging Supplier I  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- VWX Cosmetics: Purchase 25,000 custom-designed packaging boxes each month  \n- Packaging Supplier I: Produce 25,000 custom-designed packaging boxes; Schedule transport and delivery of 2-3 shipments of packaging boxes each month; Ensure packaging boxes meet specified custom design standards  \n\n3/ Timeline and Deadlines:  \n- Produce packaging boxes: 4 weeks  \n- Schedule transport and delivery: 4 weeks  \n\n4/ Financial Terms:  \n- Payment cost: $50,000 for 25,000 boxes  \n- Transport and delivery cost: $5,000 for 25,000 boxes  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Packaging boxes must meet specified custom design standards  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: VWX Cosmetics is responsible for purchasing 25,000 custom-designed packaging boxes each month when by week 4.",
+        "C2: Packaging Supplier I is responsible for producing a total of 25,000 custom-designed packaging boxes for VWX Cosmetics when by week 4.",
+        "C3: Packaging Supplier I is responsible for scheduling the transport and delivery of 2-3 shipments of packaging boxes to VWX Cosmetics when by week 4.",
+        "C4: Packaging Supplier I is responsible for ensuring that the packaging boxes delivered to VWX Cosmetics meet the specified custom design standards when by week 4.",
+        "C5: VWX Cosmetics is responsible for making payment ($50,000) for the 25,000 packaging boxes when by week 4.",
+        "C6: VWX Cosmetics is responsible for making payment ($5,000) for the transport and delivery of the 25,000 packaging boxes when by week 4."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C2: Packaging Supplier I is responsible for producing a total of 25,000 custom-designed packaging boxes for VWX Cosmetics when by week 4.",
+          "reasoning": "The clause is supported by the contract text, which clearly states that Packaging Supplier I is responsible for producing 25,000 boxes for VWX Cosmetics, and the timeline aligns with the monthly production schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Packaging Supplier I is responsible for scheduling the transport and delivery of 2-3 shipments of packaging boxes to VWX Cosmetics when by week 4.",
+          "reasoning": "The contract confirms that Packaging Supplier I will schedule 2-3 shipments within a month, and specifying \"by week 4\" is consistent with the monthly delivery schedule outlined in the contract.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Packaging Supplier I is responsible for ensuring that the packaging boxes delivered to VWX Cosmetics meet the specified custom design standards when by week 4.",
+          "reasoning": "The clause is supported by the contract text, which explicitly states that the packaging boxes will meet the specified standards, and the timeline aligns with the monthly delivery schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: VWX Cosmetics is responsible for making payment ($50,000) for the 25,000 packaging boxes when by week 4.",
+          "reasoning": "The clause is entailed as it accurately reflects the payment obligation of VWX Cosmetics for the packaging boxes, which is clearly stated in the contract text, and the timeline is consistent with the production schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: VWX Cosmetics is responsible for making payment ($5,000) for the transport and delivery of the 25,000 packaging boxes when by week 4.",
+          "reasoning": "The clause aligns with the contract text regarding the payment amount and the timeline for payment, confirming that VWX Cosmetics is responsible for the stated payment for transport and delivery.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [
+        {
+          "clause": "C1: VWX Cosmetics is responsible for purchasing 25,000 custom-designed packaging boxes each month when by week 4.",
+          "reasoning": "The contract text confirms VWX Cosmetics must purchase 25,000 boxes monthly, but it does not specify that this must occur by week 4, leading to a contradiction in the timeline.",
+          "verdict": "NOT_ENTAILMENT"
+        }
+      ],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C2: Packaging Supplier I is responsible for producing a total of 25,000 custom-designed packaging boxes for VWX Cosmetics when by week 4.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Packaging Supplier I is responsible for scheduling the transport and delivery of 2-3 shipments of packaging boxes to VWX Cosmetics when by week 4.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Packaging Supplier I is responsible for ensuring that the packaging boxes delivered to VWX Cosmetics meet the specified custom design standards when by week 4.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: VWX Cosmetics is responsible for making payment ($50,000) for the 25,000 packaging boxes when by week 4.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: VWX Cosmetics is responsible for making payment ($5,000) for the transport and delivery of the 25,000 packaging boxes when by week 4.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": [
+        {
+          "clause": "C1: VWX Cosmetics is responsible for purchasing 25,000 custom-designed packaging boxes each month when by week 4.",
+          "answer": "no",
+          "verdict": "NOT_ENTAILMENT",
+          "reasoning": "The contract text confirms VWX Cosmetics must purchase 25,000 boxes monthly, but it does not specify that this must occur by week 4, leading to a contradiction in the timeline."
+        }
+      ]
+    },
+    {
+      "file_name": "contract10",
+      "contract_text": "YZA Tech produces 5-6,000 computer systems each month. Each system re-quires 4 high-performance processors. To complete their production, YZA Tech must purchase 24,000 high-performance processors each month. Com-ponent Supplier J is the preferred supplier of these processors.\na) Component Supplier J will produce a total of 24,000 high-performance processors for YZA Tech. This constraint addresses the functionality concern of YZA Tech.\nb) Component Supplier J guarantees to schedule the transport and delivery of 4-5 shipments of processors in one month to YZA Tech. This constraint addresses the time to market concern.\nc) The processors delivered to YZA Tech will meet the specified high-performance standards. This constraint addresses several concerns in-cluding physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of processors is $480,000 for 24,000 units and the transport and delivery cost will be at or below $60,000 for 24,000 units.This constraint addresses the cost concern.",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: YZA Tech  \n- Role: Buyer  \n- Party 2: Component Supplier J  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- YZA Tech: Purchase 24,000 high-performance processors each month  \n- Component Supplier J: Produce 24,000 high-performance processors for YZA Tech; Schedule transport and delivery of 4-5 shipments of processors each month; Ensure processors meet specified high-performance standards  \n\n3/ Timeline and Deadlines:  \n- Purchase of processors: Ongoing monthly obligation (not specified in weeks)  \n- Transport and delivery: 4-5 shipments per month (approximately 4 weeks)  \n\n4/ Financial Terms:  \n- Payment cost: $480,000 for 24,000 units  \n- Transport and delivery cost: $60,000 for 24,000 units  \n- Other costs: None specified  \n\n5/ Special Conditions:  \n- Prerequisites: Processors must meet specified high-performance standards  \n- Contingencies: None specified  \n\n6/ Termination Clauses:  \n- Conditions for termination: None specified  \n- Notice period requirements: None specified",
+      "all_clauses": [
+        "C1: YZA Tech is responsible for purchasing 24,000 high-performance processors each month when on an ongoing monthly basis.",
+        "C2: Component Supplier J is responsible for producing a total of 24,000 high-performance processors for YZA Tech when on an ongoing monthly basis.",
+        "C3: Component Supplier J is responsible for scheduling the transport and delivery of 4-5 shipments of processors to YZA Tech when within 4 weeks.",
+        "C4: Component Supplier J is responsible for ensuring that the processors delivered to YZA Tech meet the specified high-performance standards when on an ongoing monthly basis.",
+        "C5: YZA Tech is responsible for making payment of $480,000 for 24,000 high-performance processors when on an ongoing monthly basis.",
+        "C6: YZA Tech is responsible for making payment of $60,000 for transport and delivery of 24,000 high-performance processors when on an ongoing monthly basis."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: YZA Tech is responsible for purchasing 24,000 high-performance processors each month when on an ongoing monthly basis.",
+          "reasoning": "The contract text clearly states that YZA Tech must purchase 24,000 high-performance processors each month, which directly supports the clause.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Component Supplier J is responsible for producing a total of 24,000 high-performance processors for YZA Tech when on an ongoing monthly basis.",
+          "reasoning": "The clause is directly supported by the contract text, which confirms Component Supplier J's obligation to produce 24,000 processors monthly for YZA Tech.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Component Supplier J is responsible for scheduling the transport and delivery of 4-5 shipments of processors to YZA Tech when within 4 weeks.",
+          "reasoning": "The contract text confirms that Component Supplier J is responsible for scheduling 4-5 shipments within a month, which corresponds to the clause's requirement of scheduling within 4 weeks.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Component Supplier J is responsible for ensuring that the processors delivered to YZA Tech meet the specified high-performance standards when on an ongoing monthly basis.",
+          "reasoning": "The clause is supported by the contract text, which confirms that Component Supplier J is responsible for delivering processors that meet high-performance standards, consistent with the ongoing monthly production requirements.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: YZA Tech is responsible for making payment of $480,000 for 24,000 high-performance processors when on an ongoing monthly basis.",
+          "reasoning": "The contract text explicitly states that the agreed upon cost of processors is $480,000 for 24,000 units, and it implies that YZA Tech is responsible for this payment on an ongoing monthly basis. Thus, the clause is consistent with the contract text.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: YZA Tech is responsible for making payment of $60,000 for transport and delivery of 24,000 high-performance processors when on an ongoing monthly basis.",
+          "reasoning": "The clause is supported by the contract text, which confirms that YZA Tech is responsible for the transport and delivery cost of $60,000 for 24,000 processors on a monthly basis.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: YZA Tech is responsible for purchasing 24,000 high-performance processors each month when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Component Supplier J is responsible for producing a total of 24,000 high-performance processors for YZA Tech when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Component Supplier J is responsible for scheduling the transport and delivery of 4-5 shipments of processors to YZA Tech when within 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Component Supplier J is responsible for ensuring that the processors delivered to YZA Tech meet the specified high-performance standards when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: YZA Tech is responsible for making payment of $480,000 for 24,000 high-performance processors when on an ongoing monthly basis.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: YZA Tech is responsible for making payment of $60,000 for transport and delivery of 24,000 high-performance processors when on an ongoing monthly basis.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    },
+    {
+      "file_name": "contract11",
+      "contract_text": "BCD Machinery produces 15-18,000 industrial machines each month. Each machine requires 75 heavy-duty bearings. To complete their production, BCD Machinery must purchase 1,350,000 heavy-duty bearings each month. Bearing Supplier K is the preferred supplier of these bearings.\na) Bearing Supplier K will produce a total of 1,350,000 heavy-duty bearings for BCD Machinery. This constraint addresses the functionality concern of BCD Machinery.\nb) Bearing Supplier K guarantees to schedule the transport and delivery of 13-15 shipments of bearings in one month to BCD Machinery. This constraint addresses the time to market concern.\nc) The bearings delivered to BCD Machinery will meet the specified heavy-duty standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of bearings is $675,000 for 1,350,000 units and the transport and delivery cost will be at or below $75,000 for 1,350,000 units. This constraint addresses the cost concern",
+      "analysis": "1/ Parties and Roles:  \n- Party 1: BCD Machinery  \n- Role: Buyer  \n- Party 2: Bearing Supplier K  \n- Role: Supplier  \n\n2/ Key Obligations:  \n- BCD Machinery: Purchase 1,350,000 heavy-duty bearings each month  \n- Bearing Supplier K: Produce 1,350,000 heavy-duty bearings for BCD Machinery, Schedule transport and delivery of 13-15 shipments of bearings each month, Ensure bearings meet specified heavy-duty standards  \n\n3/ Timeline and Deadlines:  \n- BCD Machinery: Monthly obligation to purchase bearings (4 weeks)  \n- Bearing Supplier K: Monthly obligation to produce and deliver bearings (4 weeks)  \n\n4/ Financial Terms:  \n- Payment cost: $675,000 for 1,350,000 units  \n- Transport and delivery cost: $75,000 for 1,350,000 units  \n- Other costs: None stated  \n\n5/ Special Conditions:  \n- Prerequisites: Bearings must meet specified heavy-duty standards  \n- Contingencies: None stated  \n\n6/ Termination Clauses:  \n- Conditions for termination: None stated  \n- Notice period requirements: None stated",
+      "all_clauses": [
+        "C1: BCD Machinery is responsible for purchasing 1,350,000 heavy-duty bearings each month when every 4 weeks.",
+        "C2: Bearing Supplier K is responsible for producing a total of 1,350,000 heavy-duty bearings for BCD Machinery when every 4 weeks.",
+        "C3: Bearing Supplier K is responsible for scheduling the transport and delivery of 13-15 shipments of heavy-duty bearings to BCD Machinery when every 4 weeks.",
+        "C4: Bearing Supplier K is responsible for ensuring that the bearings delivered to BCD Machinery meet the specified heavy-duty standards when every 4 weeks.",
+        "C5: BCD Machinery is responsible for making payment of $675,000 for 1,350,000 heavy-duty bearings when every 4 weeks.",
+        "C6: BCD Machinery is responsible for making payment of $75,000 for transport and delivery of 1,350,000 heavy-duty bearings when every 4 weeks."
+      ],
+      "verified_clauses": [
+        {
+          "clause": "C1: BCD Machinery is responsible for purchasing 1,350,000 heavy-duty bearings each month when every 4 weeks.",
+          "reasoning": "The clause accurately reflects the obligation of BCD Machinery to purchase 1,350,000 heavy-duty bearings each month, which is explicitly stated in the contract text. The timeline of \"every 4 weeks\" is consistent with the monthly requirement.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C2: Bearing Supplier K is responsible for producing a total of 1,350,000 heavy-duty bearings for BCD Machinery when every 4 weeks.",
+          "reasoning": "The clause is directly supported by the contract text, which states that Bearing Supplier K will produce 1,350,000 heavy-duty bearings for BCD Machinery each month, and 4 weeks is equivalent to 1 month.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C3: Bearing Supplier K is responsible for scheduling the transport and delivery of 13-15 shipments of heavy-duty bearings to BCD Machinery when every 4 weeks.",
+          "reasoning": "The clause is supported by the contract text, which explicitly states that Bearing Supplier K will schedule 13-15 shipments in one month, and 4 weeks is equivalent to one month, confirming the timeline consistency.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C4: Bearing Supplier K is responsible for ensuring that the bearings delivered to BCD Machinery meet the specified heavy-duty standards when every 4 weeks.",
+          "reasoning": "The contract explicitly states that the bearings will meet the specified standards, and the timeline of 4 weeks is consistent with the monthly production schedule.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C5: BCD Machinery is responsible for making payment of $675,000 for 1,350,000 heavy-duty bearings when every 4 weeks.",
+          "reasoning": "The clause is directly supported by the contract text, which states that BCD Machinery will pay $675,000 for 1,350,000 bearings, and the payment is due every month, which aligns with the 4-week timeframe.",
+          "verdict": "ENTAILMENT"
+        },
+        {
+          "clause": "C6: BCD Machinery is responsible for making payment of $75,000 for transport and delivery of 1,350,000 heavy-duty bearings when every 4 weeks.",
+          "reasoning": "The clause is entailed as it accurately reflects the payment obligation for transport and delivery costs stated in the contract, with all parties, amounts, and timelines aligning correctly.",
+          "verdict": "ENTAILMENT"
+        }
+      ],
+      "rejected_clauses": [],
+      "question": "Is the clause entailed with the given contract_text?",
+      "clauses": [
+        {
+          "clause": "C1: BCD Machinery is responsible for purchasing 1,350,000 heavy-duty bearings each month when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C2: Bearing Supplier K is responsible for producing a total of 1,350,000 heavy-duty bearings for BCD Machinery when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C3: Bearing Supplier K is responsible for scheduling the transport and delivery of 13-15 shipments of heavy-duty bearings to BCD Machinery when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C4: Bearing Supplier K is responsible for ensuring that the bearings delivered to BCD Machinery meet the specified heavy-duty standards when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C5: BCD Machinery is responsible for making payment of $675,000 for 1,350,000 heavy-duty bearings when every 4 weeks.",
+          "answer": "yes"
+        },
+        {
+          "clause": "C6: BCD Machinery is responsible for making payment of $75,000 for transport and delivery of 1,350,000 heavy-duty bearings when every 4 weeks.",
+          "answer": "yes"
+        }
+      ],
+      "rejected_clause_details": []
+    }
+  ]
+}

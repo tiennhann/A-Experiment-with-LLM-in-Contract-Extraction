@@ -1,0 +1,40 @@
+contract_1 = f"""
+(A Contract Between XYZ Homes and Lumber Yard A). XYZ Homes builds eight to nine 2,000 square foot homes each month for new home buyers. \
+Each new home requires 16,000 board feet of Number 2 Common grade lumber. In order to complete eight to nine homes, XYZ Homes must purchase \
+144,000 board feet of Number 2 Common grade lumber each month. Lumber Yard A is the preferred supplier of this lumber.
+In the first part of our scenario, we look at the agreement that XYZ Homes contracts with Lumber Yard A for the required lumber. \
+The agreement specifies the responsibilities of each agent. It is formalized as a set of constraints on how the work is to be conducted. \
+These constraints can be viewed as requirements (in the sense of the CPS Framework), and each requirement is mapped to one or more of an agent’s concerns. \
+A sample of these constraints and concerns includes:
+1. Lumber Yard A will produce a total of 144,000 board feet of lumber for XYZ Homes. This constraint addresses the functionality concern of XYZ Homes.
+2. Lumber Yard A guarantees to schedule the transport and delivery of 14-16 tractor trailers worth of lumber in one month to XYZ Homes.\
+This constraint addresses the time to market concern.
+3. The lumber delivered to XYZ Homes will be at or above Number 2 Common grade. This constraint addresses several concerns including physical, reliability, quality and trustworthiness. \
+For example, if Lumber Yard A were to provide lumber that is of a lesser quality than Number 2 Common grade, then from XYZ Home’s perspective, Lumber Yard A would no longer be trustworthy.
+4. The agreed upon cost of lumber is at $122,000 for 144,000 board feet and the transport and delivery cost will be at or below $500,000 for 144,000 board feet. This constraint addresses the cost concern.
+In the context of a contract, agents will normally have to execute actions to fulfill their commitments. For instance, Lumber Yard A has to produce 144,000 board feet \
+and deliver them to XYZ Homes. On the other hand, XYZ Homes has to pay for the board, etc.
+"""
+
+contract_2 = f"""
+DEF Tech is a leading manufacturer of consumer electronics, requiring a consistent supply of semiconductor chips to meet production demands. \
+They produce around 10,000 units of their flagship product each month, with each unit requiring one semiconductor chip. Therefore, DEF Tech needs 10,000 semiconductor chips monthly.\
+Semiconductor Chip Supplier C is their preferred source for these components.The contract between DEF Tech and Semiconductor Chip Supplier C includes:\
+1. Chip Supply: Supplier C will provide 10,000 semiconductor chips to DEF Tech monthly. This addresses DEF Tech's concern for continuous component availability.
+2. Delivery Reliability: Supplier C guarantees monthly delivery in a single shipment, ensuring DEF Tech's production line remains uninterrupted. \
+This addresses DEF Tech's operational efficiency and time-to-market concerns.
+3. Component Quality: All semiconductor chips will meet DEF Tech's high-quality specifications, addressing concerns about product performance, reliability, and consumer trust.
+4. Cost Structure: The agreed-upon price for the 10,000 chips is $500,000, with shipping and handling costs capped at $10,000. \
+This addresses DEF Tech's budgeting and cost management concerns.
+"""
+
+contract_3 = f"""
+GHI Restaurants operates a chain of 20 locations, with each restaurant using an average of 2,000 pounds of fresh produce weekly to meet their menu requirements. \
+To maintain freshness and quality, GHI Restaurants needs a reliable supply of 40,000 pounds of mixed fresh produce every month. Fresh Produce Supplier D is their selected provider.\
+The agreement specifics are:\
+1. Produce Delivery: Supplier D commits to supplying 40,000 pounds of various fresh produce to GHI Restaurants monthly. This addresses the freshness and availability concern for GHI Restaurants.
+2. Delivery Frequency: Supplier D will deliver fresh produce in weekly shipments to each restaurant location, addressing GHI Restaurants' need for freshness and timely stock replenishment.
+3. Quality Standard: The fresh produce will always be of premium quality, addressing concerns related to food safety, customer satisfaction, and trust in Supplier D.
+4. Cost Agreement: The total cost for the monthly fresh produce supply is set at $60,000, with delivery costs included, addressing GHI Restaurants' cost-efficiency and budgeting concerns.
+"""
+

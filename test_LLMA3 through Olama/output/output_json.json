@@ -1,0 +1,314 @@
+{
+    "contracts": [
+        {
+            "contract_text": "A text representing a contract between two entities, for example, the text XYZ Homes builds eight to nine 2,000 square foot homes each month for new home buyers. Each new home requires 16,000 board feet of Number 2 Common grade lumber. In order to complete eight to nine homes, XYZ Homes must purchase 144,000 board feet of Number 2 Common grade lumber each month. Lumber Yard A is the preferred supplier of this lumber. XYZ Homes contracts with Lumber Yard A for the required lumber. The two sides agree on the following: \na) Lumber Yard A will produce a total of 144,000 board feet of lumber for XYZ Homes.\nb) Lumber Yard A guarantees to schedule the transport and delivery of 14-16 tractor trailers worth of lumber in one month to XYZ Homes.\nc) The lumber delivered to XYZ Homes will be at or above Number 2 Common grade.\nd) The agreed upon cost of lumber is at $122,000 for 144,000 board feet and the transport and delivery cost will be at or below $500,000 for 144,000 board feet.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses for the contract:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Lumber Yard A responsible for producing Number 2 Common grade lumber in quantity of 144,000 board feet when by week 1.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Lumber Yard A responsible for delivering Number 2 Common grade lumber at or above Grade when by week 1.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Lumber Yard A responsible for ensuring lumber delivered to XYZ Homes is at or above Number 2 Common grade when by week 1.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Lumber Yard A responsible for scheduling transport and delivery of 14-16 tractor trailers worth of lumber to XYZ Homes within one month from the date of order.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C5: Lumber Yard A responsible for guaranteeing transport and delivery cost will not exceed $500,000 for 144,000 board feet when by week 1.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C6: Lumber Yard A responsible for paying a total cost of $122,000 for 144,000 board feet of Number 2 Common grade lumber within one month from the date of order.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "ABC Electronics produces 10-12,000 electronic devices each month. Each device requires 50 high-quality capacitors. To complete their production, ABC Electronics must purchase 500,000 capacitors each month. Component Supplier B is the preferred supplier of these capacitors.\na) Component Supplier B will produce a total of 500,000 capacitors for ABC Electronics. This constraint addresses the functionality concern of ABC Electronics.\nb) Component Supplier B guarantees to schedule the transport and delivery of 10-12 shipments of capacitors in one month to ABC Electronics. This constraint addresses the time to market concern.\nc) The capacitors delivered to ABC Electronics will be at or above the specified high-quality grade. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of capacitors is $150,000 for 500,000 units and the transport and delivery cost will be at or below $50,000 for 500,000 units. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses for the contract:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Component Supplier B responsible for producing high-quality capacitors meeting specifications for ABC Electronics when delivered by week not applicable.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Component Supplier B responsible for delivering 10-12 shipments of high-quality capacitors to ABC Electronics when guaranteed within one month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Component Supplier B responsible for delivering capacitors at or above the specified high-quality grade when delivered by week not applicable.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: ABC Electronics responsible for paying $150,000 for 500,000 units of high-quality capacitors and transport and delivery cost will be at or below $50,000 when payment is due.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "DEF Pharmaceuticals manufactures 20-25 batches of medicine each month. Each batch requires 200 liters of a specific chemical compound. To complete their production, DEF Pharmaceuticals must purchase 5,000 liters of the chemical compound each month. Chemical Supplier C is the preferred supplier of this compound.\na) Chemical Supplier C will produce a total of 5,000 liters of the chemi-cal compound for DEF Pharmaceuticals. This constraint addresses the functionality concern of DEF Pharmaceuticals.\nb) Chemical Supplier C guarantees to schedule the transport and deliv-ery of 5-6 shipments of the chemical compound in one month to DEF Pharmaceuticals. This constraint addresses the time to market concern.\nc) The chemical compound delivered to DEF Pharmaceuticals will meet the specified purity standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of the chemical compound is $100,000 for 5,000 liters and the transport and delivery cost will be at or below $20,000 for 5,000 liters. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses for the contract:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Chemical Supplier C responsible for producing 5,000 liters of chemical compound when by week 1.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: DEF Pharmaceuticals responsible for purchasing 5,000 liters of chemical compound from Chemical Supplier C when on a monthly basis.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Chemical Supplier C responsible for guaranteeing scheduled transport and delivery of 5-6 shipments of chemical compound to DEF Pharmaceuticals within one month when on a monthly basis.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Chemical Supplier C responsible for delivering chemical compound that meets specified purity standards when on a monthly basis.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C5: DEF Pharmaceuticals responsible for paying $100,000 for the 5,000 liters of chemical compound and transport and delivery costs at or below $20,000 when payment is due.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "GHI Automotive produces 50-60 cars each month. Each car requires 1,000 pounds of high-grade steel. To complete their production, GHI Automotive must purchase 60,000 pounds of high-grade steel each month. Steel Supplier D is the preferred supplier of this steel.\na) Steel Supplier D will produce a total of 60,000 pounds of high-grade steel for GHI Automotive. This constraint addresses the functionality concern of GHI Automotive.\nb) Steel Supplier D guarantees to schedule the transport and delivery of 6-7 shipments of steel in one month to GHI Automotive. This constraint addresses the time to market concern.\nc) The steel delivered to GHI Automotive will meet the specified high-grade standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of steel is $300,000 for 60,000 pounds and the transport and delivery cost will be at or below $40,000 for 60,000 pounds. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Steel Supplier D responsible for producing 60,000 pounds of high-grade steel when by month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: GHI Automotive responsible for purchasing 60,000 pounds of high-grade steel from Steel Supplier D when as needed.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Steel Supplier D responsible for scheduling transport and delivery of 6-7 shipments of steel in one month to GHI Automotive when during the same month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Steel Supplier D responsible for delivering high-grade steel that meets specified standards when with each shipment.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C5: GHI Automotive responsible for paying $300,000 for 60,000 pounds of high-grade steel and $40,000 or below for transport and delivery costs when as agreed.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "JKL Furniture manufactures 200-250 pieces of furniture each month. Each piece requires 50 board feet of premium hardwood. To complete their produc-tion, JKL Furniture must purchase 12,500 board feet of premium hardwood each month. Wood Supplier E is the preferred supplier of this hardwood.\na) Wood Supplier E will produce a total of 12,500 board feet of premium hardwood for JKL Furniture. This constraint addresses the functionality concern of JKL Furniture.\nb) Wood Supplier E guarantees to schedule the transport and delivery of 2-3 shipments of hardwood in one month to JKL Furniture. This constraint addresses the time to market concern.\nc) The hardwood delivered to JKL Furniture will meet the specified premium grade standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of hardwood is $50,000 for 12,500 board feet and the transport and delivery cost will be at or below $10,000 for 12,500 board feet. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses for the contract:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Wood Supplier E responsible for producing 12,500 board feet of premium hardwood when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Wood Supplier E responsible for delivering 12,500 board feet of premium hardwood to JKL Furniture when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: JKL Furniture responsible for purchasing a total of $50,000 worth of 12,500 board feet of premium hardwood from Wood Supplier E when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Wood Supplier E responsible for scheduling the transport and delivery of 2-3 shipments of premium hardwood to JKL Furniture within one month's timeframe when by week 4.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "MNO Textiles produces 5-6,000 garments each month. Each garment requires 10 yards of premium fabric. To complete their production, MNO Textiles must purchase 60,000 yards of premium fabric each month. Fabric Supplier F is the preferred supplier of this fabric.\na) Fabric Supplier F will produce a total of 60,000 yards of premium fabric for MNO Textiles. This constraint addresses the functionality concern ofMNO Textiles.\nb) Fabric Supplier F guarantees to schedule the transport and delivery of6-7 shipments of fabric in one month to MNO Textiles. This constraint addresses the time to market concern.\nc) The fabric delivered to MNO Textiles will meet the specified premium quality standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of fabric is $240,000 for 60,000 yards and the trans- port and delivery cost will be at or below $30,000 for 60,000 yards. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Fabric Supplier F responsible for producing 60,000 yards of premium fabric when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Fabric Supplier F responsible for delivering 6-7 shipments of premium fabric to MNO Textiles when by month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Fabric Supplier F responsible for ensuring the fabric delivered to MNO Textiles meets premium quality standards.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Fabric Supplier F responsible for keeping transportation and delivery cost at or below $30,000 for 60,000 yards.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "Note: Since there is no specific payment cost mentioned in the contract text, I did not include a clause related to payment.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "PQR Foods produces 30-35,000 packaged meals each month. Each meal re-quires 0.5 pounds of a specific ingredient blend. To complete their production, PQR Foods must purchase 17,500 pounds of the ingredient blend each month. Ingredient Supplier G is the preferred supplier of this blend.\na) Ingredient Supplier G will produce a total of 17,500 pounds of the ingre-dient blend for PQR Foods. This constraint addresses the functionality concern of PQR Foods.\nb) Ingredient Supplier G guarantees to schedule the transport and delivery of 3-4 shipments of the ingredient blend in one month to PQR Foods. This constraint addresses the time to market concern.\nc) The ingredient blend delivered to PQR Foods will meet the specified quality standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of the ingredient blend is $70,000 for 17,500 pounds and the transport and delivery cost will be at or below $10,000 for 17,500 pounds. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the generated clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Ingredient Supplier G responsible for producing 17,500 pounds of ingredient blend when guaranteed within one month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Ingredient Supplier G responsible for scheduling transport and delivery of ingredient blend to PQR Foods when guaranteed within one month.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "Note: Since there is no specific week number mentioned in the contract details, I did not include a \"by_week\" clause.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "STU Electronics produces 10-12,000 electronic devices each month. Each device requires 50 high-quality capacitors. To complete their production, STU Electronics must purchase 500,000 capacitors each month. Component Supplier H is the preferred supplier of these capacitors.\na) Component Supplier H will produce a total of 500,000 capacitors for STU Electronics. This constraint addresses the functionality concern of STU Electronics.\nb) Component Supplier H guarantees to schedule the transport and delivery of 10-12 shipments of capacitors in one month to STU Electronics. This constraint addresses the time to market concern.\nc) The capacitors delivered to STU Electronics will be at or above the specified high-quality grade. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of capacitors is $150,000 for 500,000 units and the transport and delivery cost will be at or below $50,000 for 500,000 units. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Component Supplier H responsible for producing high-quality capacitors meeting quantity requirements of 500,000 units when by week 10-12.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: STU Electronics responsible for receiving and utilizing high-quality capacitors at or above specified grade when delivered.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Component Supplier H responsible for scheduling transport and delivery of 10-12 shipments of capacitors to STU Electronics when within one month (by week 10-12).",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: STU Electronics responsible for paying $150,000 for the purchase of 500,000 high-quality capacitors, and transporting and delivering cost at or below $50,000, when payment is due.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "VWX Cosmetics produces 20-25,000 cosmetic products each month. Each product requires one custom-designed packaging box. To complete their pro-duction, VWX Cosmetics must purchase 25,000 custom-designed packaging boxes each month. Packaging Supplier I is the preferred supplier of these boxes.\na) Packaging Supplier I will produce a total of 25,000 custom-designed packaging boxes for VWX Cosmetics. This constraint addresses the functionality concern of VWX Cosmetics.\nb) Packaging Supplier I guarantees to schedule the transport and delivery of 2-3 shipments of packaging boxes in one month to VWX Cosmetics. This constraint addresses the time to market concern.\nc) The packaging boxes delivered to VWX Cosmetics will meet the specified custom design standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of packaging boxes is $50,000 for 25,000 boxes and the transport and delivery cost will be at or below $5,000 for 25,000 boxes. This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the clauses based on the contract details and text:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Packaging Supplier I responsible for producing custom-designed packaging boxes in a total quantity of 25,000 when by week 8.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: Packaging Supplier I responsible for scheduling transport and delivery of 2-3 shipments of packaging boxes to VWX Cosmetics within one month when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Packaging Supplier I responsible for delivering custom-designed packaging boxes that meet the specified design standards when by week 8.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: VWX Cosmetics responsible for making payment of $50,000 for a total quantity of 25,000 packaging boxes and transport and delivery cost at or below $5,000 within one month when by week 8.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "YZA Tech produces 5-6,000 computer systems each month. Each system re-quires 4 high-performance processors. To complete their production, YZA Tech must purchase 24,000 high-performance processors each month. Com-ponent Supplier J is the preferred supplier of these processors.\na) Component Supplier J will produce a total of 24,000 high-performance processors for YZA Tech. This constraint addresses the functionality concern of YZA Tech.\nb) Component Supplier J guarantees to schedule the transport and delivery of 4-5 shipments of processors in one month to YZA Tech. This constraint addresses the time to market concern.\nc) The processors delivered to YZA Tech will meet the specified high-performance standards. This constraint addresses several concerns in-cluding physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of processors is $480,000 for 24,000 units and the transport and delivery cost will be at or below $60,000 for 24,000 units.This constraint addresses the cost concern.",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the generated clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Component Supplier J responsible for producing a total of 24,000 high-performance processors when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: YZA Tech responsible for purchasing 24,000 high-performance processors from Component Supplier J when due to meet production requirements.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Component Supplier J responsible for scheduling transport and delivery of 4-5 shipments of processors in one month to YZA Tech when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Component Supplier J guarantees that the processors delivered to YZA Tech will meet the specified high-performance standards when by week 4.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C5: YZA Tech responsible for paying $480,000 for 24,000 units of high-performance processors and at or below $60,000 for transport and delivery costs when due.",
+                    "answer": "yes"
+                }
+            ]
+        },
+        {
+            "contract_text": "BCD Machinery produces 15-18,000 industrial machines each month. Each machine requires 75 heavy-duty bearings. To complete their production, BCD Machinery must purchase 1,350,000 heavy-duty bearings each month. Bearing Supplier K is the preferred supplier of these bearings.\na) Bearing Supplier K will produce a total of 1,350,000 heavy-duty bearings for BCD Machinery. This constraint addresses the functionality concern of BCD Machinery.\nb) Bearing Supplier K guarantees to schedule the transport and delivery of 13-15 shipments of bearings in one month to BCD Machinery. This constraint addresses the time to market concern.\nc) The bearings delivered to BCD Machinery will meet the specified heavy-duty standards. This constraint addresses several concerns including physical, reliability, quality, and trustworthiness.\nd) The agreed upon cost of bearings is $675,000 for 1,350,000 units and the transport and delivery cost will be at or below $75,000 for 1,350,000 units. This constraint addresses the cost concern",
+            "question": "Is the clause entailed with the given contract_text?",
+            "clauses": [
+                {
+                    "clause": "Here are the generated clauses:",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C1: Bearing Supplier K responsible for producing a total of 1,350,000 heavy-duty bearings when by week 13-15.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C2: BCD Machinery responsible for purchasing 1,350,000 heavy-duty bearings from Bearing Supplier K when as needed to meet their monthly production requirements.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C3: Bearing Supplier K responsible for scheduling transport and delivery of 13-15 shipments of bearings to BCD Machinery when by week 13-15.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C4: Bearing Supplier K responsible for delivering bearings that meet the specified heavy-duty standards when all deliveries are made.",
+                    "answer": "yes"
+                },
+                {
+                    "clause": "C5: BCD Machinery responsible for paying $675,000 for 1,350,000 units of bearings and at or below $75,000 for transport and delivery costs when all shipments are received.",
+                    "answer": "yes"
+                }
+            ]
+        }
+    ]
+}
