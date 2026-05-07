@@ -81,18 +81,62 @@ The pipeline was tested with both local and cloud-based LLMs via DSPy's unified 
 
 ---
 
-## Quick Start (main — recommended)
+## Environment Setup (recommended)
 
-1. Set up a Python 3.12 virtual environment and install dependencies (see `main/README.md`).
-2. Set your OpenAI API key.
-3. Run:
+We recommend creating a single virtual environment named `myenv` at the project root and installing all dependencies into it. This way the same environment works for all three pipelines (`main/`, `test_LLMA3 through Olama/`, and `test_ChatGPT : Gemini/`).
+
+### 1. Create the virtual environment
+
+From the project root:
 
 ```bash
+python3 -m venv myenv
+```
+
+### 2. Activate it
+
+```bash
+# macOS / Linux
+source myenv/bin/activate
+
+# Windows
+myenv\Scripts\activate
+```
+
+You'll know it's active when your terminal prompt shows `(myenv)` at the front.
+
+### 3. Install all dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs everything needed for all three pipelines (DSPy, OpenAI, Gemini, Ollama support, scikit-learn, etc.).
+
+### 4. Set your API keys (as environment variables)
+
+```bash
+export OPENAI_API_KEY="your-openai-key-here"
+export GEMINI_API_KEY="your-gemini-key-here"   # only if using Gemini
+```
+
+To make these persistent, add them to your `~/.zshrc` (macOS) or `~/.bashrc` (Linux).
+
+> **Note:** `myenv/` is already in `.gitignore`, so it will not be committed.
+
+---
+
+## Quick Start (main — recommended)
+
+After completing the environment setup above:
+
+```bash
+source myenv/bin/activate
 cd main
 python improved_clause_generator.py
 ```
 
-See `main/README.md` for full setup and configuration details.
+See `main/README.md` for full configuration details.
 
 ---
 
@@ -101,6 +145,8 @@ See `main/README.md` for full setup and configuration details.
 ```
 A Experiment with LLM in Contract Extraction/
 ├── README.md                              ← this file
+├── requirements.txt                       ← shared dependencies for all pipelines
+├── .gitignore
 │
 ├── main/                                  ← MAIN: DSPy + GPT-4o-mini
 │   ├── README.md
